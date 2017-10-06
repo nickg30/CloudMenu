@@ -1016,11 +1016,11 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/app.js?hash=931b83ca8ff3f4903dd56e371ea943e694f75e63",
+      "url": "/app/app.js?hash=85f6ea5ceb21d725508fb4886f9c6cd850773a74",
       "sourceMap": "app/app.js.map",
-      "sourceMapUrl": "/app/931b83ca8ff3f4903dd56e371ea943e694f75e63.map",
-      "size": 64317,
-      "hash": "931b83ca8ff3f4903dd56e371ea943e694f75e63"
+      "sourceMapUrl": "/app/85f6ea5ceb21d725508fb4886f9c6cd850773a74.map",
+      "size": 96491,
+      "hash": "85f6ea5ceb21d725508fb4886f9c6cd850773a74"
     },
     {
       "path": "packages/mdg_validation-error.js",
@@ -1047,11 +1047,11 @@
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/merged-stylesheets.css?hash=e16aee53a41e16493e2413aa93881bd2b2e3486c",
+      "url": "/merged-stylesheets.css?hash=6f8c122c68cc3b8c3efd2f01fe9c6bf91986f967",
       "sourceMap": "merged-stylesheets.css.map",
-      "sourceMapUrl": "/e16aee53a41e16493e2413aa93881bd2b2e3486c.map",
-      "size": 447793,
-      "hash": "e16aee53a41e16493e2413aa93881bd2b2e3486c"
+      "sourceMapUrl": "/6f8c122c68cc3b8c3efd2f01fe9c6bf91986f967.map",
+      "size": 447978,
+      "hash": "6f8c122c68cc3b8c3efd2f01fe9c6bf91986f967"
     },
     {
       "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
@@ -1322,6 +1322,303 @@
       "url": "/img/splash.afdesign",
       "size": 121004,
       "hash": "a67fb2f2056d67304dde12a540a267617039c365"
+    },
+    {
+      "path": "app/vendor/jquery-migrate.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/jquery-migrate.min.js",
+      "size": 7200,
+      "hash": "75a18cd894239b1284f3bf11a6b422cb0162bbdd"
+    },
+    {
+      "path": "app/vendor/jquery.appear.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/jquery.appear.js",
+      "size": 1266,
+      "hash": "7eb392a18423c7d568f042e40032511118acb74c"
+    },
+    {
+      "path": "app/vendor/jquery.back-to-top.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/jquery.back-to-top.js",
+      "size": 360,
+      "hash": "28445530a5ddcd09c4a89615b2810b826de7321d"
+    },
+    {
+      "path": "app/vendor/jquery.easing.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/jquery.easing.js",
+      "size": 3308,
+      "hash": "d059f2c2736c15699637434a2ccfcb2ce4b96ced"
+    },
+    {
+      "path": "app/vendor/jquery.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/jquery.min.js",
+      "size": 95933,
+      "hash": "ca305c240c22c0c46519480f6ab5a533e60ea83a"
+    },
+    {
+      "path": "app/vendor/jquery.min.map",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/jquery.min.map",
+      "size": 142010,
+      "hash": "6a8aabb06dc903a4e23ca23a8c1f53cac93dd605"
+    },
+    {
+      "path": "app/vendor/jquery.parallax.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/jquery.parallax.min.js",
+      "size": 6661,
+      "hash": "abc9136a341a79bc2ff279e29bcbbc199326394a"
+    },
+    {
+      "path": "app/vendor/jquery.smooth-scroll.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/jquery.smooth-scroll.js",
+      "size": 4296,
+      "hash": "277f1b790642a341c6a4612b7b4652adc03e63cf"
+    },
+    {
+      "path": "app/vendor/jquery.wow.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/jquery.wow.min.js",
+      "size": 7058,
+      "hash": "10385ccb0b75c01795db09d0f33b91b75aa3c9b4"
+    },
+    {
+      "path": "app/vendor/masonry/imagesloaded.pkgd.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/masonry/imagesloaded.pkgd.min.js",
+      "size": 5407,
+      "hash": "0148b93b4171139eb2997662f8fd36243cdd210c"
+    },
+    {
+      "path": "app/vendor/masonry/jquery.masonry.pkgd.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/masonry/jquery.masonry.pkgd.min.js",
+      "size": 22953,
+      "hash": "390c93044ed844ac6b83f2714eb966d98e0436aa"
+    },
+    {
+      "path": "app/vendor/bootstrap/css/bootstrap-theme.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/css/bootstrap-theme.css",
+      "size": 26132,
+      "hash": "ec5262503f2a15a9bce9c937ae8ae2b5e3365cc0"
+    },
+    {
+      "path": "app/vendor/bootstrap/css/bootstrap-theme.css.map",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/css/bootstrap-theme.css.map",
+      "size": 47706,
+      "hash": "ed2d305fb817a0b5835ffa5140ab8c2635714a0e"
+    },
+    {
+      "path": "app/vendor/bootstrap/css/bootstrap-theme.min.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/css/bootstrap-theme.min.css",
+      "size": 23409,
+      "hash": "e8e31bb3b2adaccd9f35a985e4416360c8398eb4"
+    },
+    {
+      "path": "app/vendor/bootstrap/css/bootstrap-theme.min.css.map",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/css/bootstrap-theme.min.css.map",
+      "size": 5532,
+      "hash": "128a3e4c7cfe0435bac3855cdc0e6a32803a09dc"
+    },
+    {
+      "path": "app/vendor/bootstrap/css/bootstrap.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/css/bootstrap.css",
+      "size": 146082,
+      "hash": "81b5a1b526e5ee2eb5af5a8d3ffb705e9db2ade5"
+    },
+    {
+      "path": "app/vendor/bootstrap/css/bootstrap.css.map",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/css/bootstrap.css.map",
+      "size": 389227,
+      "hash": "6e1942d4fe72982b4b1c9db3ff1f623d20c7241c"
+    },
+    {
+      "path": "app/vendor/bootstrap/css/bootstrap.min.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/css/bootstrap.min.css",
+      "size": 121260,
+      "hash": "4e3417bc8526a5129a84ea0bf106951b32aa25a4"
+    },
+    {
+      "path": "app/vendor/bootstrap/css/bootstrap.min.css.map",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/css/bootstrap.min.css.map",
+      "size": 54416,
+      "hash": "8d27b93882c6f908600871aa83908eda68baada7"
+    },
+    {
+      "path": "app/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot",
+      "size": 20127,
+      "hash": "30407a683746065f032a7a61ff50f24b008cc8b3"
+    },
+    {
+      "path": "app/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg",
+      "size": 108738,
+      "hash": "79a351a269ccbdab7745962bfd40cf86c2b9bc95"
+    },
+    {
+      "path": "app/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf",
+      "size": 45404,
+      "hash": "3a900bcba1505bbef235f1b497513a1bd894f434"
+    },
+    {
+      "path": "app/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff",
+      "size": 23424,
+      "hash": "434169edd7cbbb36bb43e25d78c7ceb26beac9b4"
+    },
+    {
+      "path": "app/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2",
+      "size": 18028,
+      "hash": "b3253b854b958bb4f2e4c2dae5ff45c8237dc1d6"
+    },
+    {
+      "path": "app/vendor/bootstrap/js/bootstrap.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/js/bootstrap.js",
+      "size": 68954,
+      "hash": "6bf1ffda1ee265ddbb559681479e7e7a34d3f2f2"
+    },
+    {
+      "path": "app/vendor/bootstrap/js/bootstrap.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/js/bootstrap.min.js",
+      "size": 36868,
+      "hash": "ac23acd0b4a2030d97bb265cc89b65285e5af676"
+    },
+    {
+      "path": "app/vendor/bootstrap/js/npm.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/bootstrap/js/npm.js",
+      "size": 484,
+      "hash": "69595e5bde9f3d874822ca9a0b10259a84383986"
+    },
+    {
+      "path": "app/vendor/simple-line-icons/css/simple-line-icons.css",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/simple-line-icons/css/simple-line-icons.css",
+      "size": 11352,
+      "hash": "c42e4d2379068f951199fc1a3931786c7277a932"
+    },
+    {
+      "path": "app/vendor/simple-line-icons/fonts/Simple-Line-Icons.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/simple-line-icons/fonts/Simple-Line-Icons.eot",
+      "size": 52090,
+      "hash": "07425ce9b8eaf25f56e99e55c407efe447201c98"
+    },
+    {
+      "path": "app/vendor/simple-line-icons/fonts/Simple-Line-Icons.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/simple-line-icons/fonts/Simple-Line-Icons.svg",
+      "size": 236045,
+      "hash": "86ae552cbd7669486a93575ae395f7bebe37942f"
+    },
+    {
+      "path": "app/vendor/simple-line-icons/fonts/Simple-Line-Icons.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/simple-line-icons/fonts/Simple-Line-Icons.ttf",
+      "size": 51880,
+      "hash": "4dd53bc4ae8ea457516041e2adea9b4835aa3358"
+    },
+    {
+      "path": "app/vendor/simple-line-icons/fonts/Simple-Line-Icons.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/simple-line-icons/fonts/Simple-Line-Icons.woff",
+      "size": 80384,
+      "hash": "d96d0ad63ac6ab82b76fff33dc817c23ab7da0b1"
+    },
+    {
+      "path": "app/vendor/simple-line-icons/fonts/Simple-Line-Icons.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/vendor/simple-line-icons/fonts/Simple-Line-Icons.woff2",
+      "size": 29260,
+      "hash": "c51719dd4b068d59911f0650efc72e48e2121ed7"
     },
     {
       "path": "head.html",

@@ -16118,7 +16118,7 @@ html {
 body {
   background: #eee;
   padding: 70px 0 150px;
-  background-color: #1d2120;
+  background-color: #fdfffc;
   height: 100%;
 }
 
@@ -16780,6 +16780,24 @@ textarea.static-input {
 #login-other-options a {
   color: #222;
   float: left !important;
+}
+
+.web-page-title {
+  color: #fdfffc;
+}
+
+.menu-heading {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #515769;
+}
+
+.price {
+  font-weight: 400;
+}
+
+.description {
+  font-size: 16px;
 }
 
 @-webkit-keyframes card {

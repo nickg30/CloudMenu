@@ -24,11 +24,13 @@ FlowRouter.route('/', {                                              // 16
 	name: 'home',                                                       // 17
 	action: function () {                                               // 18
 		if (Meteor.userId()) {                                             // 19
-			FlowRouter.go('recipe-book');                                     // 20
+			FlowRouter.go('/');                                               // 20
 		}                                                                  // 21
                                                                      //
 		GAnalytics.pageview();                                             // 22
-		BlazeLayout.render('HomeLayout');                                  // 23
+		BlazeLayout.render('HomeLayout', {                                 // 23
+			main: 'WebMenu'                                                   // 23
+		});                                                                // 23
 	}                                                                   // 24
 });                                                                  // 16
 FlowRouter.route('/profile', {                                       // 27
@@ -92,82 +94,98 @@ FlowRouter.route('/shopping-list', {                                 // 64
                                                                      //
 Recipes = new Mongo.Collection('recipes');                           // 1
 Recipes.allow({                                                      // 3
-	insert: function (userId, doc) {                                    // 4
-		return !!userId;                                                   // 5
-	},                                                                  // 6
-	update: function (userId, doc) {                                    // 7
-		return !!userId;                                                   // 8
-	}                                                                   // 9
+    insert: function (userId, doc) {                                 // 4
+        return !!userId;                                             // 5
+    },                                                               // 6
+    update: function (userId, doc) {                                 // 7
+        return !!userId;                                             // 8
+    }                                                                // 9
 });                                                                  // 3
-Ingredient = new SimpleSchema({                                      // 12
-	name: {                                                             // 13
-		type: String                                                       // 14
-	},                                                                  // 13
-	amount: {                                                           // 16
-		type: String                                                       // 17
-	},                                                                  // 16
-	price: {                                                            // 19
-		type: String                                                       // 20
-	}                                                                   // 19
+Price = new SimpleSchema({                                           // 12
+    desc: {                                                          // 13
+        type: String,                                                // 14
+        label: "Option",                                             // 15
+        optional: true                                               // 16
+    },                                                               // 13
+    amount: {                                                        // 18
+        label: "Amount",                                             // 19
+        type: String                                                 // 20
+    }                                                                // 18
 });                                                                  // 12
 RecipeSchema = new SimpleSchema({                                    // 24
-	name: {                                                             // 25
-		type: String,                                                      // 26
-		label: "Name"                                                      // 27
-	},                                                                  // 25
-	desc: {                                                             // 29
-		type: String,                                                      // 30
-		label: "Description"                                               // 31
-	},                                                                  // 29
-	ingredients: {                                                      // 33
-		type: [Ingredient]                                                 // 34
-	},                                                                  // 33
-	totalPrice: {                                                       // 36
-		type: String,                                                      // 37
-		label: "Total Meal Cost:"                                          // 38
-	},                                                                  // 36
-	inMenu: {                                                           // 40
-		type: Boolean,                                                     // 41
-		defaultValue: false,                                               // 42
-		optional: true,                                                    // 43
-		autoform: {                                                        // 44
-			type: "hidden"                                                    // 45
-		}                                                                  // 44
-	},                                                                  // 40
-	author: {                                                           // 48
-		type: String,                                                      // 49
-		label: "Author",                                                   // 50
-		autoValue: function () {                                           // 51
-			return this.userId;                                               // 52
-		},                                                                 // 53
-		autoform: {                                                        // 54
-			type: "hidden"                                                    // 55
-		}                                                                  // 54
-	},                                                                  // 48
-	createdAt: {                                                        // 58
-		type: Date,                                                        // 59
-		label: "Created At",                                               // 60
-		autoValue: function () {                                           // 61
-			return new Date();                                                // 62
-		},                                                                 // 63
-		autoform: {                                                        // 64
-			type: "hidden"                                                    // 65
-		}                                                                  // 64
-	}                                                                   // 58
+    name: {                                                          // 25
+        type: String,                                                // 26
+        label: "Name"                                                // 27
+    },                                                               // 25
+    desc: {                                                          // 29
+        type: String,                                                // 30
+        label: "Description"                                         // 31
+    },                                                               // 29
+    price: {                                                         // 33
+        type: String,                                                // 34
+        label: "Price"                                               // 35
+    },                                                               // 33
+    // Price: {                                                      // 38
+    //     type: [Price]                                             // 39
+    // },                                                            // 40
+    category: {                                                      // 41
+        type: String,                                                // 42
+        label: "Category",                                           // 43
+        allowedValues: ["Island Cuisine", "Caribbean Specialties", "Special Burritos", "Seafood Specialties", "Specialties Salads & Side Orders", "Beverages"]
+    },                                                               // 41
+    column: {                                                        // 53
+        type: Number,                                                // 54
+        label: "Column",                                             // 55
+        allowedValues: [1, 2, 3]                                     // 56
+    },                                                               // 53
+    special: {                                                       // 62
+        type: Boolean,                                               // 63
+        label: "Special",                                            // 64
+        defaultValue: false,                                         // 65
+        label: "Special Item"                                        // 66
+    },                                                               // 62
+    inMenu: {                                                        // 68
+        type: Boolean,                                               // 69
+        defaultValue: false,                                         // 70
+        optional: true,                                              // 71
+        autoform: {                                                  // 72
+            type: "hidden"                                           // 73
+        }                                                            // 72
+    },                                                               // 68
+    author: {                                                        // 76
+        type: String,                                                // 77
+        label: "Author",                                             // 78
+        autoValue: function () {                                     // 79
+            return this.userId;                                      // 80
+        },                                                           // 81
+        autoform: {                                                  // 82
+            type: "hidden"                                           // 83
+        }                                                            // 82
+    },                                                               // 76
+    createdAt: {                                                     // 86
+        type: Date,                                                  // 87
+        label: "Created At",                                         // 88
+        autoValue: function () {                                     // 89
+            return new Date();                                       // 90
+        },                                                           // 91
+        autoform: {                                                  // 92
+            type: "hidden"                                           // 93
+        }                                                            // 92
+    }                                                                // 86
 });                                                                  // 24
-Meteor.methods({                                                     // 70
-	toggleMenuItem: function (id, currentState) {                       // 71
-		Recipes.update(id, {                                               // 72
-			$set: {                                                           // 73
-				inMenu: !currentState                                            // 74
-			}                                                                 // 73
-		});                                                                // 72
-	},                                                                  // 77
-	deleteRecipe: function (id) {                                       // 78
-		Recipes.remove(id);                                                // 79
-	}                                                                   // 80
-});                                                                  // 70
-Recipes.attachSchema(RecipeSchema);                                  // 83
+Meteor.methods({                                                     // 100
+    toggleMenuItem: function (id, currentState) {                    // 101
+        Recipes.update(id, {                                         // 102
+            $set: {                                                  // 103
+                inMenu: !currentState                                // 104
+            }                                                        // 103
+        });                                                          // 102
+    },                                                               // 107
+    deleteRecipe: function (id) {                                    // 108
+        Recipes.remove(id);                                          // 109
+    }                                                                // 110
+});                                                                  // 100
+Recipes.attachSchema(RecipeSchema);                                  // 113
 ///////////////////////////////////////////////////////////////////////
 
 }},"server":{"init.js":function(){
@@ -190,9 +208,7 @@ Meteor.startup(function () {});                                      // 1
 ///////////////////////////////////////////////////////////////////////
                                                                      //
 Meteor.publish('recipes', function () {                              // 1
-	return Recipes.find({                                               // 2
-		author: this.userId                                                // 2
-	});                                                                 // 2
+	return Recipes.find({});                                            // 2
 });                                                                  // 3
 Meteor.publish('SingleRecipe', function (id) {                       // 5
 	check(id, String);                                                  // 6
@@ -200,6 +216,21 @@ Meteor.publish('SingleRecipe', function (id) {                       // 5
 		_id: id                                                            // 7
 	});                                                                 // 7
 });                                                                  // 8
+Meteor.publish('cat1col1', function () {                             // 10
+	return Recipes.find({                                               // 11
+		"column": 1                                                        // 11
+	});                                                                 // 11
+});                                                                  // 12
+Meteor.publish('cat1col2', function () {                             // 13
+	return Recipes.find({                                               // 14
+		"column": 2                                                        // 14
+	});                                                                 // 14
+});                                                                  // 15
+Meteor.publish('cat1col3', function () {                             // 16
+	return Recipes.find({                                               // 17
+		"column": 3                                                        // 17
+	});                                                                 // 17
+});                                                                  // 18
 ///////////////////////////////////////////////////////////////////////
 
 }},"intermediate.js":function(){

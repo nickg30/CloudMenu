@@ -1,15 +1,15 @@
 <template name="Menu">
-	<h1 class="page-title">My Current Box</h1>
+	<h1 class="page-title">My Current Menu</h1>
 	{{#each recipes}}
 		{{> MenuItem}}
 	{{else}}
-		<h2>Please add <a href="/recipe-book">entrees</a> to your box.</h2>
+		<h2>Please add <a href="/recipe-book">items</a> to your menu.</h2>
 	{{/each}}
 </template>
 
 <template name="MenuItem">
 	<div class="menu-item">
-		<span class="boxPriceMenu">{{totalPrice}}</span>
+		<span class="boxPriceMenu">{{price}}</span>
 		<h3>{{name}}</h3>
 		<p>{{desc}}</p>
 	</div>

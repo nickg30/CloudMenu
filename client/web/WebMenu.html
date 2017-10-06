@@ -1,0 +1,30 @@
+<template name="WebMenu">
+    <h1 class="web-page-title">My Current Menu</h1>
+    
+    <!-- Column 1 -->
+    <div class="col-md-4 col-sm-4">
+	{{#each col1}}
+        {{> WebMenuColOne}}
+	{{else}}
+		<h1>Empty</h1>
+    {{/each}}
+    </div>
+    <!-- Column 2 -->
+    <div class="col-md-4 col-sm-4">
+    {{#each col2}}
+    {{> WebMenuColTwo}}
+    {{else}}
+        <h1>Empty</h1>
+    {{/each}}
+    </div>
+    <!-- Column 3 -->
+    <div class="col-md-4 col-sm-4">
+    {{#each col3}}
+    {{> WebMenuColThree}}
+    {{else}}
+        <h1>Empty</h1>
+    {{/each}}
+    </div>
+</template>
+
+
